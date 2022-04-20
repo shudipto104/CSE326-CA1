@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="page1.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="logo">
+        <img src="logo.png"/>
+      </div>
+      <div class="lamp-container">
+        <img src="lamp.png" class="lamp" />
+      </div>
+
+      <div class="form">
+        <form  action="action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+      
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            required
+            placeholder="Your last name.."
+          />
+          
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Rusia">Rusia</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Srilanka">Srilanka</option>
+            <option value="Italy">Italy</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="USA">USA</option>
+          </select>
+          
+          
+          <label for="fname">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="Email"
+            placeholder="Enter your email address.."
+          />
+          
+          
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <button onClick="myFunction()" type="button" id="btn" link="">
+            Submit
+          </button>
+        </form>
+      </div>
+      
+      
+    </div>
+
+    <div class="quote">
+      <h1>
+         <i>“Dreaming is the art of the mind. Every dream is intrinsically a creative experience. As the artists of the night, we are co-participants in weaving new creations from the complexity of our entire being.”</i> 
+      </h1>
+  </div>
+  <div class="jrnal">
+      <p>
+         <b> What is a dream journal?</b>
+      </p>
+      <br>
+      <p >
+          A dream diary (or dream journal) is a diary in which dream experiences are recorded. A dream diary might include a record of nightly dreams, personal reflections and waking dream experiences. It is often used in the study of dreams and psychology. Dream diaries are also used by some people as a way to help induce lucid dreams. They are also regarded as a useful catalyst for remembering dreams.
+      </p>
+      <br>
+  </div>
+  <div class="rec">
+      <h1>
+          Why is it recommended to maintain a dream journal?
+      </h1>
+      <br>
+      <p>
+          Similar to how creative journaling can improve your mental health, keeping a dream journal offers its own introspective benefits, says Miyao. “Not only will you most likely begin to dream more, but you can also more easily notice and understand the patterns and themes, the symbolic language, of your dreams,” she says. “When you record dreams, they can serve as markers of growth and change.
+          
+      </p>
+  </div>
+<br>
+  <h1>Some common dreams and their interpretations </h1>
+  <h2>1.Dreams about falling </h2>
+  <p>
+      According to many popular dream interpretations and at least one study, falling dreams are a sign that something in your life isn't going well.5 It might suggest that you need to rethink a choice, for instance, or consider a new direction in some area of your life.
+  </p>
+  <h2>2.Dreams about Dying</h2>
+  <p>
+      Death is another common subject of dreams and one that can be particularly disconcerting. Dreamers sometimes dream of the death of a loved one or even of dying themselves. Popular dream interpretations suggest that such dreams reflect anxiety about change or a fear of the unknown.
+  </p>
+  <h2>
+      3.Dreams about Taking a test 
+  </h2>
+  <p>
+      "Examinations are stressful experiences in which you are made to face up to your shortcomings," he writes. "To dream of failing an exam, being late for one, or being unprepared shows that you feel unprepared for the challenges of waking life."
+  </p>
+  <h2>
+      4.Dreams about Infidelity.
+
+  </h2>
+  <p>
+      Dreaming that your spouse or romantic partner is cheating on you with someone else can be incredibly distressing. In some cases, people even start to wonder if the dream might really be true. 
+      If you or your partner cheated in your dream, one of you isn't getting what you need from that relationship right now.
+
+  </p>
+  <h2>
+      5.Dreams About Flying
+  </h2>
+  <p>
+      Dreams about flying are experienced by many.14
+
+Flying dreams can be exciting and even liberating, but they can also sometimes be quite frightening (especially for those afraid of heights).
+  </p>
+
+</body>
+
+<footer class="copy">
+
+  <p> © Mainting by Dreams<p>
+
+</footer>
+
+
+    <script>
+      var fName = document.getElementById("fname");
+      var lName = document.getElementById("lname");
+      var subject = document.getElementById("subject");
+
+      function myFunction() {
+        if (fName.value == "") {
+          alert("Please Enter First Name");
+        }
+
+        if (lName.value == "") {
+          alert("Please Enter Last Name");
+        }
+        if (subject.value == "") {
+          alert("Please Enter Message");
+        }
+
+        if (fName.value && lName.value && subject.value) {
+          alert("Submitted");
+        }
+      }
+    </script>
+  </body>
+</html>
